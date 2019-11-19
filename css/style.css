@@ -584,6 +584,217 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 10px;
 }
 
+/* About Section
+--------------------------------*/
+
+#about1 {
+}
+
+#about1 .about-img {
+  overflow: hidden;
+}
+
+#about1 .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+#about1 .content h2 {
+  color: #0c2e8a;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+}
+
+#about1 .content h3 {
+  color: #555;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#about1 .content p {
+  line-height: 26px;
+}
+
+#about1 .content p:last-child {
+  margin-bottom: 0;
+}
+
+#about1 .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #50d8af;
+}
+
+#about1 .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about1 .content ul li {
+  padding-bottom: 10px;
+}
+/* About Section
+--------------------------------*/
+
+#about11 {
+}
+
+#about11 .about-img {
+  overflow: hidden;
+}
+
+#about11 .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+#about11 .content h2 {
+  color: #0c2e8a;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+}
+
+#about11 .content h3 {
+  color: #555;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#about11 .content p {
+  line-height: 26px;
+}
+
+#about11 .content p:last-child {
+  margin-bottom: 0;
+}
+
+#about11 .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #50d8af;
+}
+
+#about11 .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about11 .content ul li {
+  padding-bottom: 10px;
+}
+
+/* About Section
+--------------------------------*/
+
+#about3 {
+}
+
+#about3 .about-img {
+  overflow: hidden;
+}
+
+#about3 .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+#about3 .content h2 {
+  color: #0c2e8a;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+}
+
+#about3 .content h3 {
+  color: #555;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#about3 .content p {
+  line-height: 26px;
+}
+
+#about3 .content p:last-child {
+  margin-bottom: 0;
+}
+
+#about3 .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #50d8af;
+}
+
+#about3 .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about3 .content ul li {
+  padding-bottom: 10px;
+}
+
+/* About Section
+--------------------------------*/
+
+#about2 {
+}
+
+#about2 .about-img {
+  overflow: hidden;
+}
+
+#about2 .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+#about2 .content h2 {
+  color: #0c2e8a;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+}
+
+#about2 .content h3 {
+  color: #555;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#about2 .content p {
+  line-height: 26px;
+}
+
+#about2 .content p:last-child {
+  margin-bottom: 0;
+}
+
+#about2 .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #50d8af;
+}
+
+#about2 .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about2 .content ul li {
+  padding-bottom: 10px;
+}
+
 /* Services Section
 --------------------------------*/
 
