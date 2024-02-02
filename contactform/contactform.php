@@ -30,8 +30,8 @@
         $email_content .= "Type: $type\n\n";
         $email_content .= "Email: $email\n\n";
         $email_content .= "Message: $message\n\n";
-        $from ="test@peacheshealthcare.com";
-        $to = "asquaredigitalsolutions@gmail.com";
+        $from ="contact@peacheshealthcare.com";
+        $to = "admin@peacheshealthcare.com";
         $subject ="$type from $name";
         $message1 =$email_content;
         $headers ="From:" . $from;
