@@ -1,0 +1,102 @@
+[27-Oct-2023 02:15:40 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2
+[27-Oct-2023 02:15:50 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2
+[27-Oct-2023 02:16:10 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2
+[27-Oct-2023 02:16:56 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2
+[27-Oct-2023 02:17:20 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2
+[27-Oct-2023 02:18:05 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2
+[27-Oct-2023 02:33:38 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2
+[27-Oct-2023 02:34:04 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2
+[27-Oct-2023 02:34:14 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2
+[27-Oct-2023 02:43:19 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2
+[27-Oct-2023 02:45:25 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2
+[27-Oct-2023 02:58:26 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 02:58:29 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 02:58:31 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 02:58:57 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 02:59:00 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 02:59:01 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 02:59:18 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 02:59:19 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 02:59:20 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 03:02:24 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 03:02:26 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 03:02:28 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 03:03:05 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 03:03:07 America/Boise] PHP Parse error:  syntax error, unexpected identifier "test" in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 8
+[27-Oct-2023 03:04:18 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail1.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 4
+[27-Oct-2023 03:04:32 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail1.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 4
+[27-Oct-2023 03:04:53 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail1.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 4
+[27-Oct-2023 03:06:15 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail1.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 4
+[27-Oct-2023 03:09:27 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail1.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 4
+[27-Oct-2023 03:09:30 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail1.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 4
+[27-Oct-2023 03:09:46 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail1.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 4
+[27-Oct-2023 03:09:49 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail1.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 4
+[27-Oct-2023 03:09:51 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail1.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 4
+[27-Oct-2023 03:10:00 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail1.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail1.php on line 4
+[27-Oct-2023 03:18:58 America/Boise] PHP Fatal error:  Uncaught Error: Undefined constant "display_errors" in /home1/asqaured/public_html/peacheshealthcare/mail.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/asqaured/public_html/peacheshealthcare/mail.php on line 2

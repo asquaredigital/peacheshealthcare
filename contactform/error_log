@@ -1,0 +1,25 @@
+[21-May-2022 10:20:26 America/Boise] PHP Fatal error:  Uncaught ArgumentCountError: mail() expects at least 3 arguments, 2 given in /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php:48
+Stack trace:
+#0 /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php(48): mail('elavarasan5193@...', 'From: Elavarasa...')
+#1 {main}
+  thrown in /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php on line 48
+[21-May-2022 10:20:27 America/Boise] PHP Fatal error:  Uncaught ArgumentCountError: mail() expects at least 3 arguments, 2 given in /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php:48
+Stack trace:
+#0 /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php(48): mail('elavarasan5193@...', 'From: Elavarasa...')
+#1 {main}
+  thrown in /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php on line 48
+[21-May-2022 10:20:27 America/Boise] PHP Fatal error:  Uncaught ArgumentCountError: mail() expects at least 3 arguments, 2 given in /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php:48
+Stack trace:
+#0 /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php(48): mail('elavarasan5193@...', 'From: Elavarasa...')
+#1 {main}
+  thrown in /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php on line 48
+[21-May-2022 10:20:49 America/Boise] PHP Fatal error:  Uncaught ArgumentCountError: mail() expects at least 3 arguments, 2 given in /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php:48
+Stack trace:
+#0 /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php(48): mail('elavarasan5193@...', 'From: Elavarasa...')
+#1 {main}
+  thrown in /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php on line 48
+[21-May-2022 10:20:49 America/Boise] PHP Fatal error:  Uncaught ArgumentCountError: mail() expects at least 3 arguments, 2 given in /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php:48
+Stack trace:
+#0 /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php(48): mail('elavarasan5193@...', 'From: Elavarasa...')
+#1 {main}
+  thrown in /home2/asquarg1/public_html/peacheshealthcare/contactform/contactform.php on line 48

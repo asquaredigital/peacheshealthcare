@@ -103,7 +103,7 @@ jQuery(document).ready(function($) {
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
+          $('.contactForm').find("input, textarea, select").val("");
         } else {
           $("#sendmessage").removeClass("show");
           $("#errormessage").addClass("show");
