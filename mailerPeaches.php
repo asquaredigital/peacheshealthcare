@@ -42,7 +42,8 @@ $headers = "From: contact@peacheshealthcare.com" . "\r\n" .
 $subject = 'Enquiry Form the Website';
 $message = "Name: $u_name\nLastname: $lname\nType: $type\nEmail: $u_email\nMessage: $msg";
 $senderEmail = 'asquaremailer@gmail.com';
-$recipientEmail = 'admin@peacheshealthcare.com';
+//$recipientEmail = 'admin@peacheshealthcare.com';
+$recipientEmail = 'elavarasan5193@gmail.com';
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
