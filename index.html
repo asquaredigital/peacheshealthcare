@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Peaches Healthcare</title>
@@ -12,7 +13,9 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+    rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,42 +31,60 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
- 
-  <script
-src="https://code.jquery.com/jquery-3.3.1.js"
-integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-crossorigin="anonymous">
-</script>
-<script>
-  $(document).ready(function(){
-    $('#myCarousel').carousel();
-  });
-  </script>
-  <script> 
-    $(function(){
-    $("#header1").load("header.html"); 
-    $("#footer1").load("footer.html"); 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+  <script>
+    $(document).ready(function () {
+      $('#myCarousel').carousel();
     });
-    </script> 
+  </script>
+  <script>
+    $(function () {
+      $("#header1").load("header.html");
+      $("#footer1").load("footer.html");
+    });
+  </script>
 
-<style>
-  .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.bg-white-opacity {
-  background-color: rgba(255, 255, 255, 0.8);
-}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#contactForm').submit(function (e) {
+        e.preventDefault();
+        var formData = $(this).serialize();
+        $.ajax({
+          type: 'POST',
+          url: 'mailerPeaches.php',
+          data: formData,
+          dataType: 'json', // Corrected data type to JSON
+          success: function (response) {
+            $('#responseMessage').text(response.message); // Corrected accessing the message key
+            $('#contactForm')[0].reset();
+          }
+        });
+      });
+    });
+  </script>
 
-</style>
+  <style>
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bg-white-opacity {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
 
 </head>
 
 
 <body id="body">
 
- 
+
   <section id="topbar" class="d-none d-lg-block">
     <div class="container clearfix">
       <div class="contact-info float-left">
@@ -74,7 +95,8 @@ crossorigin="anonymous">
         <a href="https://twitter.com/peaches_info" class="twitter"><i class="fa fa-twitter"></i></a>
         <a href="https://www.facebook.com/peacheshealthcare" class="facebook"><i class="fa fa-facebook"></i></a>
         <a href="https://www.instagram.com/infopeaches/" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/info-peaches-657a2b238/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/info-peaches-657a2b238/" class="linkedin"><i
+            class="fa fa-linkedin"></i></a>
       </div>
     </div>
   </section>
@@ -100,13 +122,13 @@ crossorigin="anonymous">
               <li><a href="about.html">About Peaches</a></li>
               <li><a href="index.html#about">Why Choose Peaches</a></li>
               <li><a href="index.html#team">Our Care Team</a></li>
-              
+
             </ul>
-          </li>          
-       
+          </li>
+
           <li class="menu-has-children"><a href="services.html">Our Services</a>
             <ul>
-              <li><a href="services.html#sevices1">	Live-in care</a></li>
+              <li><a href="services.html#sevices1"> Live-in care</a></li>
               <li><a href="services.html#sevices2">24/7 Specialist complex care</a></li>
               <li><a href="services.html#sevices3">Companionship</a></li>
 
@@ -119,7 +141,7 @@ crossorigin="anonymous">
               <li><a href="services.html#sevices8">Reablement care</a></li>
 
 
-              
+
             </ul>
           </li>
           <li class="menu-has-children"><a href="careers.html"> Careers</a>
@@ -132,7 +154,7 @@ crossorigin="anonymous">
               <li><a href="careers.html#career6">Training</a></li>
 
 
-              
+
             </ul>
           </li>
           <li><a href="index.html#contact">Contact Us</a></li>
@@ -152,15 +174,15 @@ crossorigin="anonymous">
       <div>
         <a href="index.html#about" class="btn-get-started scrollto">Get Started</a>
         <a href="index.html#portfolio" class="btn-projects scrollto">Our Services</a>
-     <!-- <h2><br><span style="color:#0080ff;text-decoration:none">Carer of the Month (Feb - 2023) :</span><img src="img/gold-medal-1300.png" width='80px' height='100px' > Kanwaljit Kaur</h2>-->  
+        <!-- <h2><br><span style="color:#0080ff;text-decoration:none">Carer of the Month (Feb - 2023) :</span><img src="img/gold-medal-1300.png" width='80px' height='100px' > Kanwaljit Kaur</h2>-->
       </div>
     </div>
 
-    <div id="intro-carousel" class="owl-carousel" >
+    <div id="intro-carousel" class="owl-carousel">
       <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div>
       <div class="item" style="background-image: url('img/intro-carousel/2.jpg');"></div>
       <div class="item" style="background-image: url('img/intro-carousel/3.jpg');"></div>
-      
+
     </div>
 
   </section><!-- #intro -->
@@ -171,8 +193,8 @@ crossorigin="anonymous">
       About Section
 
     ============================-->
-    
-   
+
+
     <section id="call-to-action" class="wow fadeInUp" style="background-color:white">
       <div class="container">
         <div class="row">
@@ -180,12 +202,14 @@ crossorigin="anonymous">
           <div class="col-lg-6">
             <h2 style="font-size: 25px;color: #0c2e8a;font-weight: bold;">Care Qualtiy Commision Rating </h2>
 
-            <script type="text/javascript" src="//www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js?data-id=1-4897944586&data-host=www.cqc.org.uk&type=location"></script>
+            <script type="text/javascript"
+              src="//www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js?data-id=1-4897944586&data-host=www.cqc.org.uk&type=location"></script>
 
           </div>
 
           <div class="col-lg-6">
-            <h2 style="font-size: 25px;color: #0c2e8a;font-weight: bold;">GSF Award Accreditation <a style="color: #0080ff;" href="GSF.html">Learn More</a> </h2>
+            <h2 style="font-size: 25px;color: #0c2e8a;font-weight: bold;">GSF Award Accreditation <a
+                style="color: #0080ff;" href="GSF.html">Learn More</a> </h2>
 
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -204,7 +228,7 @@ crossorigin="anonymous">
                 <div class="carousel-item">
                   <img src="img/GSF/GSF PIC 2 (1).jpg" alt="Slide 3">
                 </div>
-               
+
               </div>
               <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -215,19 +239,21 @@ crossorigin="anonymous">
                 <span class="sr-only">Next</span>
               </a>
             </div>
-          
+
           </div>
-          
-          
+
+
         </div>
       </div>
     </section><!-- #about -->
-   
-    <section id="about" class="wow fadeInUp" >
-      <div class="container" >
+
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
         <div class="row">
           <div class="col-lg-6 about-img">
-            <h2 style="font-size: 25px;color: #0c2e8a;font-weight: bold;">Surrey CC Community Based Services (HBC) Rating November 2023 <a style="color: #0080ff;" href="The Peaches Healthcare Limited Summary Website_2.pdf">See More</a></h2> 
+            <h2 style="font-size: 25px;color: #0c2e8a;font-weight: bold;">Surrey CC Community Based Services (HBC)
+              Rating November 2023 <a style="color: #0080ff;"
+                href="The Peaches Healthcare Limited Summary Website_2.pdf">See More</a></h2>
             <img src="The Peaches Healthcare Limited Summary Website.jpg" alt="">
           </div>
 
@@ -235,34 +261,50 @@ crossorigin="anonymous">
             <h2>Why Peaches Healthcare ?</h2>
 
             <ul>
-              <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>We pride ourselves in quality and only quality in the care service we deliver.</li>
-              <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>With the Client in the centre of everything we do, we constantly and consistently evolving every day to provide the best possible care everyone deserves. 
+              <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>We pride ourselves in quality
+                and only quality in the care service we deliver.</li>
+              <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>With the Client in the centre
+                of everything we do, we constantly and consistently evolving every day to provide the best possible care
+                everyone deserves.
               </li>
-              <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>Our care workers are highly organised, hard-working and genuinely caring</li>
-           
-              <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>We spend considerable time matching right care worker with the right service 
-                user ultimately creating a positive relationship that enables care workers in order to meet the needs of the service users in a 
+              <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>Our care workers are highly
+                organised, hard-working and genuinely caring</li>
+
+              <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>We spend considerable time
+                matching right care worker with the right service
+                user ultimately creating a positive relationship that enables care workers in order to meet the needs of
+                the service users in a
                 comfortable and friendly environment.</li>
-              
-                <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>We aim to minimise the amount of different people that the service user has to deal with on a regular basis, after all, the primary concern is improving the service user's quality of life and health, without adding any extra stress to their lives and maintain the continuity of care.</li>
-                <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>If you are interested in finding out more details about the services we provide please get in touch and ask to speak to the Registered Care Manager or the Area Manager on 0207 998 7950 or send an email to admin@peacheshealthcare.com</li>
 
-                <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>If you fund your care from your own resources or receive assistance in the form of a Direct Payment, Individual Budget (IB) or Self Directed Support (SDS) we can help. We are registered and regulated by the Care Quality Commission (CQC). We have been rated GOOD in all areas of the care by CQC in our last inspection and we are confident and striving hard to achieve OUTSTANDING in our next inspection</li>
+              <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>We aim to minimise the amount
+                of different people that the service user has to deal with on a regular basis, after all, the primary
+                concern is improving the service user's quality of life and health, without adding any extra stress to
+                their lives and maintain the continuity of care.</li>
+              <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>If you are interested in
+                finding out more details about the services we provide please get in touch and ask to speak to the
+                Registered Care Manager or the Area Manager on 0207 998 7950 or send an email to
+                admin@peacheshealthcare.com</li>
 
-              </ul>
-              
-            
+              <li style="text-align: justify;"><i class="ion-android-checkmark-circle"></i>If you fund your care from
+                your own resources or receive assistance in the form of a Direct Payment, Individual Budget (IB) or Self
+                Directed Support (SDS) we can help. We are registered and regulated by the Care Quality Commission
+                (CQC). We have been rated GOOD in all areas of the care by CQC in our last inspection and we are
+                confident and striving hard to achieve OUTSTANDING in our next inspection</li>
+
+            </ul>
+
+
           </div>
         </div>
       </div>
     </section><!-- #about -->
-    
-    
+
+
 
     <!--==========================
       Call To Action Section
     ============================-->
-    
+
 
     <!--==========================
       Our Team Section
@@ -279,7 +321,7 @@ crossorigin="anonymous">
               <div class="details">
                 <h4>Pugalendran Rajendran</h4>
                 <span>Director/ Registered Manager</span>
-               
+
               </div>
             </div>
           </div>
@@ -290,7 +332,7 @@ crossorigin="anonymous">
               <div class="details">
                 <h4>Kowcigan Jambulingam</h4>
                 <span>Director / Business Manager</span>
-               
+
               </div>
             </div>
           </div>
@@ -300,7 +342,7 @@ crossorigin="anonymous">
               <div class="details">
                 <h4>Parvathy Ramchandran</h4>
                 <span>HR/Finance Manager</span>
-               
+
               </div>
             </div>
           </div>
@@ -310,7 +352,7 @@ crossorigin="anonymous">
               <div class="details">
                 <h4>Nana Hawa Nagaiya Laryea</h4>
                 <span>Care Co-ordinator</span>
-              
+
               </div>
             </div>
           </div>
@@ -320,38 +362,38 @@ crossorigin="anonymous">
               <div class="details">
                 <h4>Sathyanarayana Mailagani</h4>
                 <span>Care Administrator</span>
-              
+
               </div>
             </div>
           </div>
-            <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="member">
               <div class="pic"><img src="img/Samuel Anjorin.jpg" alt=""></div>
               <div class="details">
                 <h4>Samuel Anjorin</h4>
                 <span>Quality Assurance Lead</span>
-              
+
               </div>
             </div>
-          </div> 
-           
-
-          
+          </div>
 
 
-         </div> 
+
+
+
+        </div>
 
       </div>
     </section><!-- #team -->
     <!--==========================
       Services Section
     ============================-->
-   <!-- #services -->
+    <!-- #services -->
 
-   <!--==========================
+    <!--==========================
       Our Portfolio Section
     ============================-->
-   
+
 
     <!--==========================
       Clients Section
@@ -359,16 +401,17 @@ crossorigin="anonymous">
     <section id="clients" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Clients</h2><p>Individual Clients, Rehab Companies and Insurance Companies
+          <h2>Clients</h2>
+          <p>Individual Clients, Rehab Companies and Insurance Companies
 
-            </p>
+          </p>
         </div>
 
-         <div class="owl-carousel clients-carousel">
+        <div class="owl-carousel clients-carousel">
           <img src="img/clients/clients-1.jpg" alt="">
           <img src="img/clients/clients-2.jpg" alt="">
 
-        
+
           <img src="img/clients/clients-5.jpg" alt="">
           <img src="img/clients/clients-6.jpg" alt="">
         </div>
@@ -376,70 +419,86 @@ crossorigin="anonymous">
       </div>
     </section><!-- #clients -->
 
-    
 
 
-      <section id="testimonials" class="wow fadeInUp">
+
+    <section id="testimonials" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
           <h2>Testimonials</h2>
-          <p>We have been providing quality service to our clients, and we have received some valuable feedback from them</p>
+          <p>We have been providing quality service to our clients, and we have received some valuable feedback from
+            them</p>
         </div>
         <div class="owl-carousel testimonials-carousel">
 
-            <div class="testimonial-item" >
-                  <h3>Ann W </h3>
-              <h4>(Wife of Client) </h4>
-              <p style="text-align:justify"><br>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-               This fantastic team of carers provided by Peaches Healthcare are a boon for me and my husband. With us both being disabled, life was not easy. They came in to our lives when we needed someone the most and have lit up our home and lives with nothing but, smiles and happiness. They have been very professional and thorough in looking after my husband, given his complex care needs. Their care delivery is second to none. Lastly but not least to say that the management have been a pillar that we have been relying on for any unexpected increase in care demands. Nothing is too hard for these people. Just brilliant. The Peaches meet all the perfect expectations of my husband's needs.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt=""><br>
-              </p>
-            
-            </div>
+          <div class="testimonial-item">
+            <h3>Ann W </h3>
+            <h4>(Wife of Client) </h4>
+            <p style="text-align:justify"><br>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              This fantastic team of carers provided by Peaches Healthcare are a boon for me and my husband. With us
+              both being disabled, life was not easy. They came in to our lives when we needed someone the most and have
+              lit up our home and lives with nothing but, smiles and happiness. They have been very professional and
+              thorough in looking after my husband, given his complex care needs. Their care delivery is second to none.
+              Lastly but not least to say that the management have been a pillar that we have been relying on for any
+              unexpected increase in care demands. Nothing is too hard for these people. Just brilliant. The Peaches
+              meet all the perfect expectations of my husband's needs.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt=""><br>
+            </p>
 
-            <div class="testimonial-item" >
-                 <h3>Social Workers</h3>
-              <h4>Stakeholder Satisfaction Survey</h4>
-              <p style=  "text-align: justify;"><br>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              
-   Staff demonstrates professionalism and maintain effective and professional communication with parties involve in patient care such as GP,CHC, Social Services, family etc. Highly professional in communicating, engaging and completing delegated healthcare task <br><br>
-  A very reliable and well run agency that focus on the care and well-being of the service users in their care
+          </div>
 
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-              </p><br>
-             
-            </div>
- <div class="testimonial-item" >
-                  <h3>Heather M </h3>
-              <h4>(Daughter of Client) </h4>
-              <p style="text-align:justify"><br>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+          <div class="testimonial-item">
+            <h3>Social Workers</h3>
+            <h4>Stakeholder Satisfaction Survey</h4>
+            <p style="text-align: justify;"><br>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+
+              Staff demonstrates professionalism and maintain effective and professional communication with parties
+              involve in patient care such as GP,CHC, Social Services, family etc. Highly professional in communicating,
+              engaging and completing delegated healthcare task <br><br>
+              A very reliable and well run agency that focus on the care and well-being of the service users in their
+              care
+
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p><br>
+
+          </div>
+          <div class="testimonial-item">
+            <h3>Heather M </h3>
+            <h4>(Daughter of Client) </h4>
+            <p style="text-align:justify"><br>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
               Overall Experience 4 out of 5 <br>
-Peaches looked after my father for approx 9-months. They were professional, caring and approachable. I had daily updates on my father's wellbeing as I lived some distance away. They took care of his needs, and when necessary, called for medical assistance when required. My father had a number of carers, which he built up relationship overtime. We had some small issues, to begin with, but were soon sorted out to a mutual agreement. Initially, it was very difficult for my father to accept that he needed the help, but soon realised he could no longer manage on his own. Any concerns I had were soon sorted out with the management team, who were very understanding and approachable.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt=""><br>
-              </p>
-            
-            </div>
-           
+              Peaches looked after my father for approx 9-months. They were professional, caring and approachable. I had
+              daily updates on my father's wellbeing as I lived some distance away. They took care of his needs, and
+              when necessary, called for medical assistance when required. My father had a number of carers, which he
+              built up relationship overtime. We had some small issues, to begin with, but were soon sorted out to a
+              mutual agreement. Initially, it was very difficult for my father to accept that he needed the help, but
+              soon realised he could no longer manage on his own. Any concerns I had were soon sorted out with the
+              management team, who were very understanding and approachable.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt=""><br>
+            </p>
 
-           
+          </div>
 
-         
+
+
+
+
 
         </div>
 
       </div>
     </section><!-- #testimonials -->
-   <!-- #testimonials -->
+    <!-- #testimonials -->
 
     <!--==========================
       Call To Action Section
     ============================-->
     <!-- #call-to-action -->
 
-    
+
 
     <!--==========================
       Contact Section
@@ -449,27 +508,32 @@ Peaches looked after my father for approx 9-months. They were professional, cari
         <div class="section-header">
           <h2>Accessible Information Standard (AIS)</h2>
 
-        <p>Please get in touch if you need a document from our website in an alternative format. We can offer you information in other languages, in large print or braille, or in audio format.
+          <p>Please get in touch if you need a document from our website in an alternative format. We can offer you
+            information in other languages, in large print or braille, or in audio format.
 
-      <br><br>Please contact our Admin Team and let them know which information you would like and what format you would like it in.
+            <br><br>Please contact our Admin Team and let them know which information you would like and what format you
+            would like it in.
 
-      <br> Telephone: <span style="color: #0c2e8a;">0207 998 7950</span> 
-      <br> Email : <span style="color: #0c2e8a;">admin@peacheshealthcare.com</span>
+            <br> Telephone: <span style="color: #0c2e8a;">0207 998 7950</span>
+            <br> Email : <span style="color: #0c2e8a;">admin@peacheshealthcare.com</span>
 
-      <br><br>You can find more information about the Accessible Information Standard on the NHS England website : <a href="https://www.england.nhs.uk/accessibleinfo" style="font-weight: bold;color: #0c2e8a;">www.england.nhs.uk/accessibleinfo</a>
+            <br><br>You can find more information about the Accessible Information Standard on the NHS England website :
+            <a href="https://www.england.nhs.uk/accessibleinfo"
+              style="font-weight: bold;color: #0c2e8a;">www.england.nhs.uk/accessibleinfo</a>
 
-      <br>For more information contact the Diversity and Inclusion Team: <br>
-      
-      Telephone: <span style="color: #0c2e8a;">0207 998 7950</span><br>
-      Email: <span style="color: #0c2e8a;"> hr@peacheshealthcare.com </span> </p>  
+            <br>For more information contact the Diversity and Inclusion Team: <br>
 
-          </div>
+            Telephone: <span style="color: #0c2e8a;">0207 998 7950</span><br>
+            Email: <span style="color: #0c2e8a;"> hr@peacheshealthcare.com </span>
+          </p>
+
+        </div>
       </div>
 
- 
 
-      
-      </section>
+
+
+    </section>
 
     <section id="contact" class="wow fadeInUp">
       <div class="container">
@@ -478,7 +542,8 @@ Peaches looked after my father for approx 9-months. They were professional, cari
           <h3>Head Office</h3>
           <p>Our services are run 24 hours a day, seven days a week, and 365 days a year. You can choose to have our
             assistance from a few hours a day to someone caring for you 24x7 (live-in)
-            We appreciate that everybody’s needs change constantly and to suit your lifestyle, we offer flexible times.</p>
+            We appreciate that everybody’s needs change constantly and to suit your lifestyle, we offer flexible times.
+          </p>
         </div>
 
         <div class="row contact-info">
@@ -486,7 +551,7 @@ Peaches looked after my father for approx 9-months. They were professional, cari
           <div class="col-md-4">
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
-              
+
 
               <h3>Address</h3>
               <address> 339, Vicarage Farm Road, Heston, Hounslow TW5 0DZ</address>
@@ -501,8 +566,8 @@ Peaches looked after my father for approx 9-months. They were professional, cari
 
             </div>
           </div>
-        
-         
+
+
 
 
 
@@ -526,48 +591,54 @@ Peaches looked after my father for approx 9-months. They were professional, cari
       </div>
 
       <div class="container mb-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.9726337112606!2d-0.36864478434344344!3d51.495369679633136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760daf9337ea63%3A0x5d130d5ec9929472!2sThe%20Peaches%20Healthcare%20Limited!5e0!3m2!1sen!2sin!4v1652968137263!5m2!1sen!2sin" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.9726337112606!2d-0.36864478434344344!3d51.495369679633136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760daf9337ea63%3A0x5d130d5ec9929472!2sThe%20Peaches%20Healthcare%20Limited!5e0!3m2!1sen!2sin!4v1652968137263!5m2!1sen!2sin"
+          width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
 
       <div class="container">
         <h3>Bracknell Office </h3>
 
-      <div class="row contact-info">
+        <div class="row contact-info">
 
-        <div class="col-md-4">
-          <div class="contact-address">
-            <i class="ion-ios-location-outline"></i>
-            <h3>Address</h3>
-            <address> 10-12 High St, Bagshot GU19 5AE</address>
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address> 10-12 High St, Bagshot GU19 5AE</address>
 
+            </div>
           </div>
+
         </div>
-        
-      </div>
-      <div class="container mb-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d622.8306535234375!2d-0.6945064!3d51.3603656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767f71f12b191d%3A0x511def9b44ab4137!2sChamberlain%20House%2C%2010-12%20High%20St%2C%20Bagshot%20GU19%205AE%2C%20UK!5e0!3m2!1sen!2sin!4v1652966439621!5m2!1sen!2sin" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
+        <div class="container mb-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d622.8306535234375!2d-0.6945064!3d51.3603656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767f71f12b191d%3A0x511def9b44ab4137!2sChamberlain%20House%2C%2010-12%20High%20St%2C%20Bagshot%20GU19%205AE%2C%20UK!5e0!3m2!1sen!2sin!4v1652966439621!5m2!1sen!2sin"
+            width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
 
       </div>
       <div class="container">
         <h4>For any queries please write to us below</h4>
 
         <div class="form">
-          
-          <form action="" id="contact_form" name="contact_form" method="post" class="contactForm">
+
+          <form id="contactForm" method="post" name="contact_form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="First Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
+                <input type="text" name="name" class="form-control" id="name" placeholder="First Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <!-- <div class="validation"></div> -->
               </div>
 
               <div class="form-group col-md-6">
-                <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
+                <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <!-- <div class="validation"></div> -->
               </div>
-              
+
               <div class="form-group col-md-6" style="color:#495057">
-                <select name="type" class="form-control" id="type" >
+                <select name="type" class="form-control" id="type">
                   <option value="">Select the Type of Enquiry</option>
 
                   <option value="Care_Enquiry">Care Enquiry</option>
@@ -576,18 +647,20 @@ Peaches looked after my father for approx 9-months. They were professional, cari
                 </select>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                  data-rule="email" data-msg="Please enter a valid email" />
+                <!-- <div class="validation"></div> -->
               </div>
             </div>
-            
+
             <div class="form-group">
-              <textarea class="form-control" name="message1" id="message1" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
+              <textarea class="form-control" name="message1" id="message1" rows="5" data-rule="required"
+                data-msg="Please write something for us" placeholder="Message"></textarea>
+              <!-- <div class="validation"></div> -->
             </div>
             <div class="text-center"><button type="submit">Send Message</button></div>
-            
-            <div style="text-align: center;" id="response-message"></div>
+
+            <div style="text-align: center;" id="responseMessage"></div>
 
           </form>
 
@@ -595,15 +668,15 @@ Peaches looked after my father for approx 9-months. They were professional, cari
 
       </div>
     </section><!-- #contact -->
-    
+
 
   </main>
-  
+
   <!--==========================
     Footer
   ============================-->
   <div id="footer1">
-  
+
   </div>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
@@ -623,46 +696,47 @@ Peaches looked after my father for approx 9-months. They were professional, cari
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-  
-  <script>
-  $(document).ready(function () {
-    $('#contact_form').submit(function (event) {
-      event.preventDefault(); // Prevent form submission
 
-      // Get form data
-      var formData = {
-        name: $('#name').val(),
-        lname: $('#lname').val(),
-        type: $('#type').val(),
-        email: $('#email').val(),
-        message1: $('#message1').val(),
-      };
+  <!-- <script>
+    $(document).ready(function () {
+      $('#contact_form').submit(function (event) {
+        event.preventDefault(); // Prevent form submission
 
-      // Check if form is filled out
-     
+        // Get form data
+        var formData = {
+          name: $('#name').val(),
+          lname: $('#lname').val(),
+          type: $('#type').val(),
+          email: $('#email').val(),
+          message1: $('#message1').val(),
+        };
 
-      // Send AJAX request
-      $.ajax({
-        type: 'POST',
-        url: 'contact2.php',
-        data: formData,
-        dataType: 'json',
-        encode: true
-      })
-        .done(function (response) {
-          // Display response message
-          $('#response-message').text(response.message);
-                $('#contact_form')[0].reset();
+        // Check if form is filled out
 
 
+        // Send AJAX request
+        $.ajax({
+          type: 'POST',
+          url: 'contact2.php',
+          data: formData,
+          dataType: 'json',
+          encode: true
         })
-        .fail(function (response) {
-          // Display error message
-          $('#response-message').text('Error occurred while processing the request.');
-        });
+          .done(function (response) {
+            // Display response message
+            $('#response-message').text(response.message);
+            $('#contact_form')[0].reset();
+
+
+          })
+          .fail(function (response) {
+            // Display error message
+            $('#response-message').text('Error occurred while processing the request.');
+          });
+      });
     });
-  });
-</script>
+  </script> -->
 
 </body>
+
 </html>
